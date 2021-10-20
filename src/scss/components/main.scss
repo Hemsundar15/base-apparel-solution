@@ -1,0 +1,22 @@
+/*-- Main --*/
+
+.main{
+    width: 100%;
+    min-height: 100vh;
+
+    display: grid;
+    grid-template-rows: 165px 1fr;
+    grid-template-columns: 60% 1fr;
+
+    background: url(/src/assets/bg-pattern-desktop.svg);
+    background-position: left;
+    background-size: cover;
+}
+
+@media (max-width: 425px) {
+    .main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 84px 250px 1fr;
+    }
+}

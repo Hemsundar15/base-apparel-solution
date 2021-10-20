@@ -1,0 +1,124 @@
+/*-- textbox --*/
+
+.textbox{
+    grid-column: 1/2;
+    grid-row: 2/3;
+
+    height: 100%;
+    padding: 65px 220px 65px 165px;
+
+    background: var(--gradient-1);
+
+    display: flex;
+    flex-direction: column;
+
+    &__heading{
+        font-size: 62px;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 20px;
+        text-align: left;
+        line-height: 110%;
+        
+        color: var(--dark-grayish-red--clr);
+
+        .highlight{
+                font-weight: 300;
+
+                color: var(--desaturated-red--clr);
+        }
+    }
+
+    &__description{
+        max-width: 45ch;
+        margin-top: 20px;
+
+        font-size: 1rem;
+        text-align: left;
+        line-height: 175%;
+
+        color: var(--desaturated-red--clr);
+    }
+
+    .mail{
+        margin-top: 40px;
+
+        position: relative;
+
+        height: 56px;
+        width: 100%;
+
+        border-radius: 100px;
+        border: 1px solid var(--desaturated-red--clr);
+
+        &__from{
+            height: 100%;
+            width: 100%;
+            padding: 0 0 0 32px;
+
+            font-size: 1rem;
+
+            background: transparent;
+            border: none;
+
+            color: var(--desaturated-red--clr);
+        }
+
+        &__send{
+            position: absolute;
+
+            right: 0;
+            top: 0;
+
+            height: 100%;
+            width: 100px;
+
+            border: none;
+            border-radius: 100px;
+            background: var(--gradient-2);
+        }
+    }
+}
+
+@media (max-width: 1024px){
+    .textbox{
+        padding: 65px 90px;
+    }
+}
+
+@media (max-width: 768px){
+    .textbox{
+        padding: 30px 50px;
+    }
+}
+
+@media (max-width: 425px) {
+    .textbox{
+        grid-column: 1/2;
+        grid-row: 3/4;
+
+        padding: 65px 32px;
+
+        &__heading{
+            font-size: 42px;
+            text-align: center;
+        }
+
+        &__description{
+            font-size: 0.875rem;
+            text-align: center;
+        }
+
+        .mail{
+            height: 48px;
+
+            &__from{
+                font-size: 0.875rem;
+            }
+
+            &__send{
+                width: 64px;
+            }
+        }
+    }
+}
