@@ -1,0 +1,22 @@
+/*-- Footer --*/
+
+footer{
+    position: absolute;
+    width: 865px;
+
+    bottom: 0;
+    left: 0;
+
+    font-size: 12px;
+
+    display: flex;
+    justify-content: center;
+
+    p{
+        color: var(--dark-grayish-red--clr);
+    }
+
+    a{
+        color: var(--soft-red--clr);
+    }
+}
